@@ -9,5 +9,5 @@ if systemctl is-active --quiet nginx; then
 else
 	STATUS_MESSAGE="$(date '+%d-%m-%Y %H:%M:%S') O serviço nginx não está em execução -  nginx - OFFLINE"
 	echo "$STATUS_MESSAGE" >> "$LOG_DIR/nginx_offline.log"
-	echo "$STATUS MESSAGE" >> "$LOG_DIR/nginx_status.log"
+	echo "$STATUS_MESSAGE" >> "$LOG_DIR/nginx_status.log"
 fi
