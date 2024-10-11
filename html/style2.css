@@ -61,6 +61,7 @@ main{
 }
 
 .div1, .div2{
+    margin-left: 1em;
     margin-top: 2.5em;
     position: fixed;
     top: 170px;
