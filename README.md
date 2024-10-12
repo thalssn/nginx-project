@@ -175,3 +175,8 @@ Nesta seção, você encontrará informações sobre a troca do arquivo `index.h
   ```bash
   sudo systemctl restart nginx
   ```
+## Para Leigos
+
+**Instruções Adicionais do Projeto**
+
+Junto aos arquivos do meu projeto, estarei incluindo um PDF intitulado **"Manual de instalação Nginx.Linux.VM.pdf"**, que contém instruções detalhadas e prints sobre como criar a máquina virtual e instalar o Linux e o Nginx. Este PDF inclui os códigos utilizados no terminal do Linux para a instalação do Nginx, o código usado no script de validação da disponibilidade do servidor, além de capturas de tela que ilustram o processo de instalação do Linux e a criação da máquina virtual. Essas informações visam facilitar a compreensão e a execução das etapas necessárias para configurar o ambiente do projeto.
