@@ -42,10 +42,10 @@ Após a instalação do sistema operacional, siga os passos abaixo para instalar
 
 1. Adicione seu usuário ao grupo `sudo`:
 
-   ```bash
+```bash
    sudo usermod -aG sudo seu_usuario
    sudo reboot
-   ```
+```
 2. Atualize os repósitorios:
 
   ```bash
@@ -143,6 +143,17 @@ A estrutura de diretórios do projeto após a criação e configuração será s
   - **nginx_status.log**: Histórico completo do status do Nginx (online/offline).
 - **nginx_monitor.sh**: Script responsável por verificar o status do Nginx e salvar nos logs.
 
+### O que é cada arquivo desse diretório?
+
+- Pasta `html`: contém os arquivos dá página index.html do nginx.
+- Pasta `logs`: contém os arquivos de logs que informam o status do nginx:
+  - `nginx_online.log`: Arquivo de log com todos os eventos de servidor online.
+  - `nginx_offline.log`: Arquivo de log com todos os eventos de servidor offline.
+  - `nginx_status.log`: Arquivo de log com todos os eventos do servidor (online e offline).
+- `Manual de instalação Nginx.Linux.VM.pdf`: Manual de instalação de todos os softwares usados, com imagens.
+- `crontab_copy.txt`: Cópia do arquivo de configuração do crontab (Agendador de scripts).
+- `nginx_monitor.sh`: Script que monitora status do nginx e salva nos arquivos de logs.
+
 ## Passos Adicionais Não Obrigatórios
 
 Nesta seção, você encontrará informações sobre a troca do arquivo `index.html` padrão do Nginx. Essa alteração não é obrigatória, mas pode ser útil se você desejar personalizar a página inicial do seu servidor.
@@ -151,11 +162,11 @@ Nesta seção, você encontrará informações sobre a troca do arquivo `index.h
 
 1. **Localize o arquivo `index.html` padrão**:  
 
-   O arquivo padrão do Nginx geralmente está localizado em:
+O arquivo padrão do Nginx geralmente está localizado em:
 
-    ```bash
+  ```bash
    /var/www/html/index.html
-    ```
+  ```
 2. **Faca backup do arquivo original (opcional)**:
 
   Antes de fazer alterações, é uma boa prática fazer um backup do arquivo original:
